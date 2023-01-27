@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+    
+        <h1>Painting: <%=painting_name%></h1>
+        <%if(painting_name=='MonaLisa'){ %>
+            <p>It is a painting by Leonardo Da Vinci</p>
+        <% }else{ %>
+            <p>We dont knwo who painted this</p>
+            <%}%>
+        <h2>Painter: <%=painter_name%></h2>
+
+  <%- include("partials/footer") %>

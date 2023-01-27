@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+        <h1>This are the paintings that we have:</h1>
+        <div class="row">
+          <% for(var i=0;i<paintings_list.length;i++){ %>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/https://th.bing.com/th/id/OIP.wT4jZKIL7_5AtWIplMtNkgHaJ4?w=149&h=197&c=7&r=0&o=5&pid=1.7" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"> <%=paintings_list[i].painting_name %> </h5>
+                <p class="card-text">Painted By <%=paintings_list[i].painter_name %></p>
+                <a href="/paintings/<%=paintings_list[i].painting_name %>/<%=paintings_list[i].painter_name %>" class="btn btn-primary">More Detail</a>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+        
+
+
+ <%- include("partials/footer") %>
